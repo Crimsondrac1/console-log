@@ -1,9 +1,9 @@
-const { UserInputError, AuthenticationError } = require('apollo-server');
-const Question = require('../../models/question');
-const User = require('../../models/user');
-const authCheck = require('../../utils/authCheck');
-const errorHandler = require('../../utils/errorHandler');
-const { upVote, downVote, ansRep } = require('../../utils/helperFuncs');
+const { UserInputError, AuthenticationError } = require("apollo-server");
+const Question = require("../../models/question");
+const User = require("../../models/user");
+const authCheck = require("../../utils/authCheck");
+const errorHandler = require("../../utils/errorHandler");
+const { upVote, downVote, ansRep } = require("../../utils/helperFuncs");
 
 module.exports = {
   Mutation: {
@@ -11,8 +11,8 @@ module.exports = {
       const loggedUser = authCheck(context);
       const { quesId, body } = args;
 
-      if (body.trim() === '' || body.length < 30) {
-        throw new UserInputError('Answer must be atleast 30 characters long.');
+      if (body.trim() === "" || body.length < 30) {
+        throw new UserInputError("Answer must be atleast 30 characters long.");
       }
 
       try {
@@ -30,8 +30,8 @@ module.exports = {
         });
         const savedQues = await question.save();
         const populatedQues = await savedQues
-          .populate('answers.author', 'username')
-          .populate('answers.comments.author', 'username')
+          .populate("answers.author", "username")
+          .populate("answers.comments.author", "username")
           .execPopulate();
 
         author.answers.push({
@@ -69,9 +69,9 @@ module.exports = {
 
         if (
           targetAnswer.author.toString() !== user._id.toString() &&
-          user.role !== 'admin'
+          user.role !== "admin"
         ) {
-          throw new AuthenticationError('Access is denied.');
+          throw new AuthenticationError("Access is denied.");
         }
 
         question.answers = question.answers.filter(
@@ -87,8 +87,8 @@ module.exports = {
       const loggedUser = authCheck(context);
       const { quesId, ansId, body } = args;
 
-      if (body.trim() === '' || body.length < 30) {
-        throw new UserInputError('Answer must be atleast 30 characters long.');
+      if (body.trim() === "" || body.length < 30) {
+        throw new UserInputError("Answer must be atleast 30 characters long.");
       }
 
       try {
@@ -110,7 +110,7 @@ module.exports = {
         }
 
         if (targetAnswer.author.toString() !== loggedUser.id.toString()) {
-          throw new AuthenticationError('Access is denied.');
+          throw new AuthenticationError("Access is denied.");
         }
 
         targetAnswer.body = body;
@@ -122,8 +122,8 @@ module.exports = {
 
         const savedQues = await question.save();
         const populatedQues = await savedQues
-          .populate('answers.author', 'username')
-          .populate('answers.comments.author', 'username')
+          .populate("answers.author", "username")
+          .populate("answers.comments.author", "username")
           .execPopulate();
 
         return populatedQues.answers;
@@ -159,7 +159,7 @@ module.exports = {
         }
 
         let votedAns;
-        if (voteType === 'upvote') {
+        if (voteType === "upvote") {
           votedAns = upVote(targetAnswer, user);
         } else {
           votedAns = downVote(targetAnswer, user);
@@ -171,8 +171,8 @@ module.exports = {
 
         const savedQues = await question.save();
         const populatedQues = await savedQues
-          .populate('answers.author', 'username')
-          .populate('answers.comments.author', 'username')
+          .populate("answers.author", "username")
+          .populate("answers.comments.author", "username")
           .execPopulate();
 
         const author = await User.findById(targetAnswer.author);
@@ -208,7 +208,7 @@ module.exports = {
 
         if (question.author.toString() !== loggedUser.id.toString()) {
           throw new UserInputError(
-            'Only the author of question can accept answers.'
+            "Only the author of question can accept answers."
           );
         }
 
@@ -223,8 +223,8 @@ module.exports = {
 
         const savedQues = await question.save();
         const populatedQues = await savedQues
-          .populate('answers.author', 'username')
-          .populate('answers.comments.author', 'username')
+          .populate("answers.author", "username")
+          .populate("answers.comments.author", "username")
           .execPopulate();
 
         return populatedQues;
