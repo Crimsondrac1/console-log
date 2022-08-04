@@ -4,7 +4,7 @@ const errorHandler = require('../../utils/errorHandler');
 
 module.exports = {
   Query: {
-    postAllTags: async () => {
+    getAllTags: async () => {
       try {
         const tagsFromQues = await Question.find({}).select('tags');
         const tagsArray = tagsFromQues.map((t) => t.tags).flat();
