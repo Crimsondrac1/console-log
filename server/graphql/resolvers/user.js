@@ -8,7 +8,7 @@ const { SECRET } = require('../../utils/config');
 
 module.exports = {
   Query: {
-    getUser: async (_, args) => {
+    postUser: async (_, args) => {
       const { username } = args;
 
       if (username.trim() === '') {
@@ -46,7 +46,7 @@ module.exports = {
         recentAnswers,
       };
     },
-    getAllUsers: async () => {
+    postAllUsers: async () => {
       const allUsers = await User.find({}).select('username createdAt');
       return allUsers;
     },
