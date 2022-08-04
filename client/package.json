@@ -1,4 +1,5 @@
 {
+  "homepage": "http://does-not-equal.herokuapp.com",
   "name": "console-log",
   "version": "1.0.0",
   "private": true,
