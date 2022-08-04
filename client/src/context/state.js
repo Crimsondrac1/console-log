@@ -4,7 +4,7 @@ import storage from '../utils/localStorage';
 const StateContext = createContext({
   editValues: null,
   notification: null,
-  darkMode: false,
+  darkMode: true,
   setEditValues: (values) => {},
   clearEdit: () => {},
   notify: (message, severity, duration) => {},
@@ -37,7 +37,7 @@ const stateReducer = (state, action) => {
     case 'TOGGLE_DARK_MODE':
       return {
         ...state,
-        darkMode: !state.darkMode,
+        darkMode: state.darkMode,
       };
     default:
       return state;
@@ -48,7 +48,7 @@ export const StateProvider = ({ children }) => {
   const [state, dispatch] = useReducer(stateReducer, {
     editValues: null,
     notification: null,
-    darkMode: false,
+    darkMode: true,
   });
 
   useEffect(() => {

@@ -3,7 +3,7 @@ import { useLocation, Link as RouterLink } from 'react-router-dom';
 import { MenuItem, useMediaQuery, Divider, Grid } from '@material-ui/core';
 import { useMenuStyles } from '../styles/muiStyles';
 import { useTheme } from '@material-ui/core/styles';
-import PublicIcon from '@material-ui/icons/Public';
+import PriorityHighIcon from '@material-ui/icons/PriorityHigh';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import PeopleIcon from '@material-ui/icons/People';
 
@@ -27,7 +27,7 @@ const DesktopNavMenu = () => {
             component={RouterLink}
             to="/"
           >
-            <PublicIcon className={classes.menuIcon} />
+            <PriorityHighIcon className={classes.menuIcon} />
             Does not equal
           </MenuItem>
           <MenuItem
