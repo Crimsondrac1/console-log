@@ -16,7 +16,7 @@
     "url": "git@github.com:Crimsondrac1/console-log.git"
   },
   "keywords": [],
-  "author": "Jose Miguel Fernandez & Doug Erickson",
+  "author": "Jose Miguel Fernandez - Doug Erickson",
   "license": "GNU",
   "devDependencies": {
     "concurrently": "^5.2.0"

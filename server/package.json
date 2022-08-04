@@ -6,9 +6,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "watch": "nodemon server.js"
   },
-  "author": "Jose Miguel Fernandez & Doug Erickson",
+  "author": "Jose Miguel Fernandez - Doug Erickson",
   "license": "GNU",
   "dependencies": {
     "apollo-server": "^2.18.2",
