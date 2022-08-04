@@ -1,5 +1,6 @@
 {
   "homepage": "http://does-not-equal.herokuapp.com",
+  "proxy": "http://localhost:3001",
   "name": "console-log",
   "version": "1.0.0",
   "private": true,

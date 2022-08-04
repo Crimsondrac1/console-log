@@ -3,8 +3,12 @@ import { setContext } from 'apollo-link-context';
 import storage from './utils/localStorage';
 import backendUrl from './backendUrl';
 
-const httpLink = new HttpLink({
-  uri: backendUrl,
+// const httpLink = new HttpLink({
+//   uri: backendUrl,
+// });
+
+const httpLink = createHttpLink({
+  uri: '/graphql',
 });
 
 const authLink = setContext(() => {
