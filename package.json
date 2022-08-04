@@ -19,6 +19,7 @@
   "author": "Jose Miguel Fernandez - Doug Erickson",
   "license": "GNU",
   "dependencies": {
-    "concurrently": "^7.3.0"
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
   }
 }
