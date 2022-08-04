@@ -8,7 +8,7 @@ import backendUrl from './backendUrl';
 // });
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: backendUrl,
 });
 
 const authLink = setContext(() => {
