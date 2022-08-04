@@ -1,4 +1,4 @@
-import { ReactComponent as AcceptedIcon } from '../png/accepted.png';
+import { ReactComponent as AcceptedIcon } from '../png/accepted.svg';
 
 import { Checkbox, SvgIcon } from '@material-ui/core';
 import { useQuesPageStyles } from '../styles/muiStyles';

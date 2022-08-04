@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
-import { ReactComponent as UpvoteIcon } from '../png/upvote.png';
-import { ReactComponent as DownvoteIcon } from '../png/downvote.png';
+import { ReactComponent as UpvoteIcon } from '../png/upvote.svg';
+import { ReactComponent as DownvoteIcon } from '../png/downvote.svg';
 
 import { DialogTitle } from './CustomDialogTitle';
 import {

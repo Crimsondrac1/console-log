@@ -7,7 +7,7 @@ import CommentSection from './CommentSection';
 import AcceptAnswerButton from './AcceptAnswerButton';
 import DeleteDialog from './DeleteDialog';
 import AuthFormModal from './AuthFormModal';
-import { ReactComponent as AcceptedIcon } from '../png/accepted.png';
+import { ReactComponent as AcceptedIcon } from '../png/accepted.svg';
 
 import {
   Typography,

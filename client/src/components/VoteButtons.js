@@ -1,5 +1,5 @@
-import { ReactComponent as UpvoteIcon } from '../png/upvote.png';
-import { ReactComponent as DownvoteIcon } from '../png/downvote.png';
+import { ReactComponent as UpvoteIcon } from '../png/upvote.svg';
+import { ReactComponent as DownvoteIcon } from '../png/downvote.svg';
 
 import { Checkbox, SvgIcon } from '@material-ui/core';
 import { useVoteBtnsStyles } from '../styles/muiStyles';

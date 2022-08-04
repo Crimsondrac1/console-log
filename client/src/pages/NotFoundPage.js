@@ -1,4 +1,4 @@
-import { ReactComponent as Error404 } from '../png/404-error.png';
+import { ReactComponent as Error404 } from '../png/404-error.svg';
 
 import { Typography, SvgIcon } from '@material-ui/core';
 import { useNotFoundPageStyles } from '../styles/muiStyles';
