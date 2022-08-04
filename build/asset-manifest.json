@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3479bc64.chunk.css",
+    "main.js": "/static/js/main.60be9998.chunk.js",
+    "main.js.map": "/static/js/main.60be9998.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0d6d3212.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0d6d3212.js.map",
+    "static/css/2.69a12410.chunk.css": "/static/css/2.69a12410.chunk.css",
+    "static/js/2.7a10ccfb.chunk.js": "/static/js/2.7a10ccfb.chunk.js",
+    "static/js/2.7a10ccfb.chunk.js.map": "/static/js/2.7a10ccfb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.69a12410.chunk.css.map": "/static/css/2.69a12410.chunk.css.map",
+    "static/css/main.3479bc64.chunk.css.map": "/static/css/main.3479bc64.chunk.css.map",
+    "static/js/2.7a10ccfb.chunk.js.LICENSE.txt": "/static/js/2.7a10ccfb.chunk.js.LICENSE.txt",
+    "static/media/404-error.bb3bc420.svg": "/static/media/404-error.bb3bc420.svg",
+    "static/media/accepted.e277c840.svg": "/static/media/accepted.e277c840.svg",
+    "static/media/downvote.7ebb6912.svg": "/static/media/downvote.7ebb6912.svg",
+    "static/media/latin.css": "/static/media/montserrat-latin-900-normal.e66c7edc.woff2",
+    "static/media/stack-overflow.2ff7d6f6.svg": "/static/media/stack-overflow.2ff7d6f6.svg",
+    "static/media/upvote.9f607766.svg": "/static/media/upvote.9f607766.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d6d3212.js",
+    "static/css/2.69a12410.chunk.css",
+    "static/js/2.7a10ccfb.chunk.js",
+    "static/css/main.3479bc64.chunk.css",
+    "static/js/main.60be9998.chunk.js"
+  ]
+}
