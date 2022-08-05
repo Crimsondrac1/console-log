@@ -1,3 +1,4 @@
+const express = require('express');
 const { ApolloServer } = require('apollo-server');
 const connectToDB = require('./connect');
 const typeDefs = require('./graphql/typeDefs');
