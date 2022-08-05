@@ -3,6 +3,7 @@ const connectToDB = require('./connect');
 const typeDefs = require('./graphql/typeDefs');
 const resolvers = require('./graphql/resolvers');
 // const { PORT } = require('./utils/config');
+const app = express();
 const PORT = process.env.PORT || 4000
 connectToDB();
 

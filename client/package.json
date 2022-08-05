@@ -1,9 +1,7 @@
 {
   "homepage": "http://does-not-equal.herokuapp.com",
-  "proxy": "http://localhost:3001",
-  "name": "console-log",
+  "name": "does-not-equal",
   "version": "1.0.0",
-  "private": true,
   "dependencies": {
     "@apollo/client": "^3.2.5",
     "@hookform/resolvers": "^1.0.1",
