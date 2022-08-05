@@ -12,6 +12,13 @@ const server = new ApolloServer({
   context: ({ req }) => ({ req }),
 });
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+
 server.listen( PORT ).then(({ url }) => {
   console.log(`Server ready at ${url}`);
 });
